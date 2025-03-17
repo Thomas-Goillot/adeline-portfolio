@@ -1,5 +1,3 @@
-// src/content.js
-
 export const content = {
     header: {
         name: "Adeline Doche",

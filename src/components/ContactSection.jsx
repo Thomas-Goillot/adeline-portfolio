@@ -21,7 +21,6 @@ function ContactSection() {
                     {content.contact.title}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Coordonnées */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-4">
                             <FontAwesomeIcon icon={faEnvelope} className="text-dark-blue text-xl" />
@@ -36,7 +35,6 @@ function ContactSection() {
                             <p className="text-gray-700">{content.contact.address}</p>
                         </div>
                     </div>
-                    {/* Réseaux sociaux */}
                     <div className="flex flex-col items-center justify-center space-y-4">
                         <h3 className="text-xl font-semibold text-dark-blue">Réseaux Sociaux</h3>
                         <div className="flex space-x-6">

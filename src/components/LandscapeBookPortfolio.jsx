@@ -7,7 +7,6 @@ const LandscapeBookPortfolio = ({ portfolio }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const totalPages = portfolio.pages.length;
 
-  // 1) Listen to window resize, set width/height based on breakpoints
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth >= 1600) {
@@ -20,7 +19,6 @@ const LandscapeBookPortfolio = ({ portfolio }) => {
         setFlipWidth(500);
         setFlipHeight(350);
       } else {
-        // Mobile or very narrow
         setFlipWidth(300);
         setFlipHeight(200);
       }
@@ -31,12 +29,10 @@ const LandscapeBookPortfolio = ({ portfolio }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // 2) Page flip event
   const onFlip = (e) => {
     setCurrentPage(e.data);
   };
 
-  // 3) Stacks (optional)
   const leftStackCount = currentPage;
   const rightStackCount = totalPages - currentPage - 1;
 
@@ -62,10 +58,8 @@ const LandscapeBookPortfolio = ({ portfolio }) => {
     return stack;
   };
 
-  // 4) Page components
   const CoverPage = ({ page }) => (
     <div className="w-full h-full flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${page.image})` }}>
-      {/* Example: <h2 className="text-2xl text-white">{page.title}</h2> */}
     </div>
   );
 
@@ -75,17 +69,14 @@ const LandscapeBookPortfolio = ({ portfolio }) => {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat'
     }}>
-      {/* Example: <p>{page.content}</p> */}
     </div>
   );
 
   const BackCoverPage = ({ page }) => (
     <div className="w-full h-full flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${page.image})` }}>
-      {/* Example: <h2 className="text-2xl text-white">Back Cover</h2> */}
     </div>
   );
 
-  // 5) Render
   return (
     <div className="w-full h-full">
       <div className="relative">
@@ -99,7 +90,6 @@ const LandscapeBookPortfolio = ({ portfolio }) => {
         />
         <div className="relative m-5 bg-dark-blue z-10 rounded" style={{ width: flipWidth * 2, height: flipHeight }}>
           <div className="relative w-full h-full">
-            {/* {renderStack(rightStackCount, 'right')} */}
             <HTMLFlipBook
               width={flipWidth}
               height={flipHeight}

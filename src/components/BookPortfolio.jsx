@@ -1,4 +1,3 @@
-// src/components/BookPortfolio.jsx
 import React from 'react';
 import HTMLFlipBook from 'react-pageflip';
 
