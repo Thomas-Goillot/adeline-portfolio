@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Portfolio Design",
     "cover": "/images/pages/cv_page-0001.jpg",
+    "pdf": "/pdf/cv.pdf",
     "pages": [
         { "title": "Page 1", "content": "Contenu de la page 1", "image": "/images/pages/cv_page-0001.jpg" },
         { "title": "Page 3", "content": "Contenu de la page 3", "image": "/images/pages/cv_page-0003.jpg" },
