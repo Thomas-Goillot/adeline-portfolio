@@ -18,13 +18,13 @@ function ProfileSection() {
         <FontAwesomeIcon icon={faUser} className="mr-2" />
         {content.profile.title}
       </h2>
-      <div className="flex flex-col md:flex-row md:items-center">
+      <div className="flex flex-col items-center md:flex-row md:items-center">
         <img
           src={content.profile.image}
           alt="Portrait Adeline Doche"
           className="w-40 h-40 object-cover rounded-full mb-6 md:mb-0 md:mr-8"
         />
-        <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+        <p className="text-gray-700 leading-relaxed whitespace-pre-line text-center md:text-left">
           {content.profile.text}
         </p>
       </div>
