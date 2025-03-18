@@ -6,6 +6,7 @@
     "pdf": "/pdf/cv.pdf",
     "pages": [
         { "title": "Page 1", "content": "Contenu de la page 1", "image": "/images/pages/cv_page-0001.jpg" },
+        { "title": "Page 2", "content": "Contenu de la page 2", "image": "/images/pages/cv_page-0002.jpg" },
         { "title": "Page 3", "content": "Contenu de la page 3", "image": "/images/pages/cv_page-0003.jpg" },
         { "title": "Page 4", "content": "Contenu de la page 4", "image": "/images/pages/cv_page-0004.jpg" },
         { "title": "Page 5", "content": "Contenu de la page 5", "image": "/images/pages/cv_page-0005.jpg" },
